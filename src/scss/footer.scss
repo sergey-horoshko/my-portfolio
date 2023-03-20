@@ -1,0 +1,50 @@
+footer {
+  background-color: #2d2e32;
+  padding: 50px 0;
+  width: 100%;
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__social {
+      display: flex;
+      align-items: center;
+      &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        transition: 0.3s;
+        @media (any-hover: hover) {
+          &:hover {
+            transform: scale(1.20);
+          }
+        }
+        a {
+          display: flex;
+          width: 100%;
+        }
+        svg {
+          width: 100%;
+          fill: #fff;
+        }
+        &:last-child {
+          margin-left: 24px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .footer {
+    flex-direction: column;
+    h3 {
+      text-align: center;
+    }
+    &__social {
+      margin-top: 20px;
+    }
+  }
+}
