@@ -3,11 +3,12 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 4px;
-  border: 1px solid #2d2e32;
+  border: 1px solid var(--mainColor);
   padding: 4px 10px;
   cursor: pointer;
   margin-right: 16px;
   min-width: 94px;
+  transition: 0.3s;
 
   span {
     font-size: 17px;
@@ -23,6 +24,11 @@
     width: 20px;
     height: 20px;
     animation: fade 0.3s;
+    path {
+      transition: 0.3s;
+      fill: var(--bg2) !important;
+      stroke: var(--bg2) !important;
+    }
   }
 }
 

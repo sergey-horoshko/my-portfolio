@@ -1,11 +1,16 @@
 footer {
-  background-color: #2d2e32;
+  background-color: var(--mainColor);
   padding: 50px 0;
   width: 100%;
+  transition: 0.3s;
   .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    h3 {
+      color: var(--additionColor);
+      transition: 0.3s;
+    }
     &__social {
       display: flex;
       align-items: center;
@@ -27,7 +32,8 @@ footer {
         }
         svg {
           width: 100%;
-          fill: #fff;
+          fill: var(--bg);
+          transition: 0.3s;
         }
         &:last-child {
           margin-left: 24px;

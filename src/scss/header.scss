@@ -1,19 +1,20 @@
 @import "./components/switch";
 
 header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   position: sticky;
   top: 0;
-  width: 100%;
-  background: #fff;
-  color: #242424;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0,0,0,.09);
-  display: flex;
-  font-size: 1.7rem;
-  height: auto;
-  justify-content: space-between;
   left: 0;
-  padding: 25px 0px;
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: var(--secondaryColor);
+  box-shadow: var(--shadow);
+  background: var(--bg);
+  user-select: none;
+  transition: 0.3s;
   z-index: 200;
 }
 
@@ -22,16 +23,25 @@ header {
   align-items: center;
   justify-content: space-between;
   &__logo {
-    color: #2d2e32;
+    color: var(--mainColor);
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
     text-decoration: none;
+    transition: 0.3s;
   }
   &__actions {
     display: flex;
   }
   &__btn {
     display: none;
+    cursor: pointer;
+    svg {
+      transition: 0.3s;
+      path {
+        fill: var(--bg2);
+        transition: 0.3s;
+      }
+    }
   }
 }
 
@@ -48,14 +58,24 @@ header {
     &-item {
       font-size: 17px;
       a {
-        color: #2d2e32;
+        color: var(--mainColor);
         font-weight: 600;
         text-decoration: none;
-        transition: all .23s;
+        transition: 0.3s;
+        &:hover {
+          color: var(--hoverColor);
+        }
       }
     }
     &-close {
       display: none;
+      cursor: pointer;
+      svg {
+        path {
+          stroke: var(--bg2);
+          transition: 0.3s;
+        }
+      }
     }
   }
 }
@@ -85,7 +105,7 @@ header {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: var(--bg);
     transition: 0.5s;
     &._active {
       left: 0;

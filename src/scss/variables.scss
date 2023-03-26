@@ -1,2 +1,23 @@
-$mainColor: #2d2e32;
-$additionColor: rgba(255, 255, 255, 0.87);
+.page[data-theme="light"] {
+  --mainColor: #{$lightMainColor};
+  --secondaryColor: #{$lightSecondaryColor};
+  --additionColor: #{$lightAdditionColor};
+  --hoverColor: #{$lightHoverColor};
+  --bg: #{$lightBg};
+  --bg2: #{$darkBg};
+  --bg3: #{$lightBg2};
+  --shadow: #{$lightShadow};
+  --contact: #{$lightContactColor};
+}
+
+.page[data-theme="dark"] {
+  --mainColor: #{$darkMainColor};
+  --secondaryColor: #{$darkSecondaryColor};
+  --additionColor: #{$darkAdditionColor};
+  --hoverColor: #{$darkHoverColor};
+  --bg: #{$darkBg};
+  --bg2: #{$lightBg};
+  --bg3: #{$darkB2};
+  --shadow: #{$darkShadow};
+  --contact: #{$darkContactColor};
+}

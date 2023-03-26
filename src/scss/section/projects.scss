@@ -1,0 +1,125 @@
+.section__project {
+  background: var(--bg3);
+}
+
+.project {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    &-item {
+      display: flex;
+      gap: 6%;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      background: var(--bg);
+      padding: 20px;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+      }
+    }
+  }
+  &__item {
+    &-img{
+      width: 100%;
+      flex-basis: 50%;
+      background-color: hsla(0,0%,46%,.2);
+      border-radius: 1.7rem;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+      height: auto;
+      max-height: 310px;
+      overflow: hidden;
+      &._active {
+        img {
+          transform: translateY(calc(-100% + 310px));
+        }
+      }
+      img {
+        width: 100%;
+        transition: 10s ease-in-out;
+      }
+    }
+    &-info{
+      flex-basis: 40%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-title{
+      color: var(--mainColor);
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    &-text{
+      color: var(--contact);
+      font-size: 17px;
+      font-weight: 500;
+      text-align: center;
+      text-transform: none;
+      margin-bottom: 15px;
+    }
+    &-stack{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      margin-bottom: 30px;
+      li {
+        background-color: var(--bg);
+        box-shadow: var(--shadow);
+        color: var(--mainColor);
+        font-weight: 600;
+        padding: 10px 13px;
+        font-size: 16px;
+      }
+    }
+    &-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--mainColor);
+        text-decoration: none;
+        transition: 0.3s;
+        svg {
+          fill: var(--mainColor);
+          width: 22px;
+          height: 22px;
+          transition: 0.3s;
+        }
+        &:hover {
+          color: var(--hoverColor);
+          svg {
+            fill: var(--hoverColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .project {
+    &__list-item {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      &:nth-child(even) {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+    }
+    &__item {
+      &-img {
+        max-width: 600px;
+      }
+    }
+  }
+}
