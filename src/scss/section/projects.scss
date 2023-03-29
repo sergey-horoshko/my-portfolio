@@ -29,6 +29,12 @@
       height: auto;
       max-height: 310px;
       overflow: hidden;
+      &-solo {
+        display: flex;
+        img {
+          object-fit: cover;
+        }
+      }
       &._active {
         img {
           transform: translateY(calc(-100% + 310px));
@@ -74,6 +80,7 @@
         font-weight: 600;
         padding: 10px 13px;
         font-size: 16px;
+        border-radius: 3px;
       }
     }
     &-links {

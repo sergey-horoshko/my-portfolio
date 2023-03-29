@@ -85,8 +85,8 @@ const hoverItems = reactive({
             </div>
           </div>
           <div class="project__list-item">
-            <div class="project__item-img">
-              <img src="../../assets/project/gallery.png" alt="Dancing">
+            <div class="project__item-img project__item-img-solo">
+              <img src="../../assets/project/gallery.png" alt="Film Gallery">
             </div>
             <div class="project__item-info">
               <div class="project__item-title">
@@ -118,8 +118,8 @@ const hoverItems = reactive({
             </div>
           </div>
           <div class="project__list-item">
-            <div class="project__item-img">
-              <img src="../../assets/project/weather.jpg" alt="Dancing">
+            <div class="project__item-img project__item-img-solo">
+              <img src="../../assets/project/weather.jpg" alt="Weather">
             </div>
             <div class="project__item-info">
               <div class="project__item-title">

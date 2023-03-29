@@ -16,10 +16,10 @@
           <div class="about__content-item">
             <div class="about__title section__title">About me</div>
             <div class="about__descr section__descr">
-              Front-end Developer based in Elektrostal, Russia 📍
+              Frontend Developer based in Elektrostal, Russia 📍
             </div>
             <div class="about__text">
-              As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript,
+              As a Junior Frontend Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript,
               Vue, Webpack, Git, SCSS and more other skills. I excel in designing and maintaining responsive websites that offer a smooth
               user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and
               optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who

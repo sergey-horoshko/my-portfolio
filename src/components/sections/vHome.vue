@@ -7,7 +7,7 @@
       <div class="home">
         <div class="home__content">
           <div class="home__text">
-            <h1>Front-End Vue Developer</h1>
+            <h1>Frontend Vue Developer</h1>
             <img class="home__img-title" src="../../assets/waving.png" alt="hello">
             <p>
               Hi, I'm Sergey Horoshko, a passionate Front-end Vue Developer based in Elektrostal, Russia. 📍
